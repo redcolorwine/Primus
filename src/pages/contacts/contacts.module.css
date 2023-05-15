@@ -1,0 +1,204 @@
+.contactsPage {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.address {
+    margin: 40px 0px 40px 0px;
+    width: 100%;
+}
+
+
+
+.address h2 {
+    font-family: 'Tinos';
+}
+
+.address p {
+    font-family: 'Tinos';
+}
+
+.contactsPage h1 {
+    font-family: 'Tinos';
+}
+
+.contacts p {
+    margin: 5px 0px 5px 0px;
+    font-size: 14pt;
+}
+
+.contacts h4 {
+    margin: 5px 0px 5px 0px;
+    font-size: 20pt;
+    font-family: 'Tinos';
+}
+
+.contacts span {
+    color: rgb(238, 73, 42);
+}
+
+.contacts {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.empty {
+    height: 300px;
+}
+
+.head {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* background-image: url('./../../media/blue.jpg'); */
+    background-color: black;
+}
+
+.head .headText {
+    margin-left: 40px;
+}
+
+.head h2 {
+    font-size: 34pt;
+    font-family: 'Tinos';
+    color: white;
+}
+
+.head p {
+    color: gainsboro;
+}
+
+.contactWrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.social img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 1420px) {
+    .contactsPage {
+        width: 1200px;
+    }
+
+    .head h2 {
+        font-size: 28pt;
+    }
+}
+
+@media (max-width: 1225px) {
+    .contactsPage {
+        width: 1000px;
+    }
+
+    .head h2 {
+        font-size: 20pt;
+    }
+
+    .head p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .contactsPage {
+        width: 800px;
+    }
+
+    .head h2 {
+        font-size: 15pt;
+    }
+
+    .head p {
+        width: 300px;
+    }
+
+    .phones p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 855px) {
+    .contactWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+
+    }
+
+    .contacts {
+        height: auto;
+    }
+
+    .empty {
+        height: 0px;
+    }
+
+
+
+    .head h2 {
+        font-size: 20pt;
+    }
+
+    .head p {
+        width: auto;
+    }
+
+    .phones {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .phones>p {
+        font-size: 15pt;
+    }
+
+    .contactsPage {
+        width: 100%;
+    }
+
+    .head {
+        position: inherit;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+    }
+
+    .head .headText {
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .phones>p {
+        font-size: 12pt;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .head .headText {
+        margin-left: 0px;
+    }
+}

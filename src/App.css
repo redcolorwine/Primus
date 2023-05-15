@@ -1,0 +1,20 @@
+.App {
+  height: 100%;
+  width: 100%;
+  font-family: 'Tinos';
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-wrapper {
+  min-height: 100%;
+  flex: 1 0 auto;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('./../src/media/fonts/Tinos/Tinos-Regular.ttf');
+}

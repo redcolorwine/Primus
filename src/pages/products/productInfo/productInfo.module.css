@@ -1,0 +1,301 @@
+.productInfo {
+    margin: 40px auto 0px auto;
+    width: 1400px;
+    overflow-x: hidden;
+    font-family: 'Times';
+}
+
+.productInfo h1 {
+
+    margin: 0px 0px 20px 0px;
+}
+
+.imgWrapper {
+
+    box-shadow: 0px 0px 5px 0px gray;
+    width: 700px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.mainImg img {
+    height: 400px;
+    padding: 5px;
+    width: 100%;
+    object-fit: contain;
+    /* border-bottom: 1px solid gray; */
+
+}
+
+.productInfo .otherImgs img {
+    cursor: pointer;
+}
+
+img.active {
+    border: 2px solid red;
+}
+
+.otherImgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.otherImgs img {
+    height: 70px;
+    max-width: 70px;
+    /* border: 1px solid gray; */
+    cursor: pointer;
+}
+
+
+.productWrapper {}
+
+.topInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandLogo img {
+    height: 40px;
+    min-width: 50px;
+    object-fit: cover;
+    padding: 10px 0px 10px 0px;
+}
+
+.shortDesc {
+    font-size: 14pt;
+    width: 600px;
+}
+
+.shortDesc p {
+    font-size: 14pt;
+}
+
+.shortDesc h4 {
+    margin-top: 10px;
+}
+
+.shortDesc h4 span {
+    color: rgb(238, 73, 42);
+}
+
+.shortChar {
+    line-height: 30px;
+}
+
+.inStock {
+    display: inline;
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+    color: rgb(0, 136, 122);
+    /* border: 2px solid rgb(0, 136, 122); */
+}
+
+.notInStock {
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+    border: 2px solid red;
+}
+
+.contactWithUs {
+    margin-top: 20px;
+}
+
+.contactWithUs button {
+
+    font-size: 12pt;
+    color: white;
+    background-color: rgb(238, 73, 42);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 40px;
+    font-size: 14pt;
+}
+
+.description h2 {
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.fullChar {
+    /* line-height: 30px; */
+    font-family: 'Times';
+    text-align: justify;
+    font-size: 14pt;
+    color: black;
+}
+
+.fullChar h2 {
+    margin: 30px 0px 10px 0px;
+}
+
+.price {
+    font-size: 15pt;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 0;
+    color: red;
+}
+
+.contacts {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts img {
+    height: 600px;
+    width: 600px;
+    object-fit: contain;
+}
+
+
+
+
+@media (max-width: 1420px) {
+    .productInfo {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1225px) {
+    .productInfo {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .productInfo {
+        width: 800px;
+    }
+
+    .contacts img {
+        height: 400px;
+        width: 400px;
+        margin: 5px;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .productInfo {
+        width: 100%;
+    }
+
+    .productInfo h1 {
+        text-align: center;
+    }
+
+    .productInfo h2 {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .topInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .shortDesc {
+
+        width: 90%;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .shortDesc h4 {
+        margin-top: 10px;
+    }
+
+    .shortDesc h4 span {
+        color: orangered;
+    }
+
+    .shortChar {
+        line-height: 30px;
+    }
+
+    .imgWrapper {
+
+        box-shadow: 0px 0px 5px 0px gray;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .mainImg img {
+        height: 400px;
+        padding: 0px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .contacts {
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts>.contactForm {
+        align-self: center;
+    }
+
+    .contacts img {
+        height: 400px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .fullChar {
+        text-align: justify;
+        font-size: 13pt;
+        color: black;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contactWithUs button {
+        margin-left: 10px;
+    }
+
+    .contactWithUs button:first-child {
+        margin-left: 10px;
+    }
+
+    .otherImgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px 0px 5px 0px;
+    }
+
+    .otherImgs img {
+        height: 50px;
+        max-width: 50px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width: 750px) {}
+
+@media (max-width: 430px) {
+    .productInfo h1 {
+        font-size: 17pt;
+    }
+}

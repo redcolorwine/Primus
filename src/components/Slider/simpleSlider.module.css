@@ -1,0 +1,197 @@
+.sliderWrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.simpleSlider {
+    position: relative;
+
+}
+
+.simpleSlider img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+
+
+.simpleSlider .descr {
+
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+    top: 50%;
+    width: 1000px;
+    transform: translate(0, -50%);
+    /* transform: translate(-50%, -50%); */
+}
+
+.descr h1, h2 {
+    font-family: 'Tinos';
+    color: rgb(211, 227, 252);
+    font-size: 30pt;
+}
+
+.descr h2 {
+    font-size: 25pt;
+}
+
+.descr h1 span {
+    color: rgb(238, 73, 42);
+}
+
+.descr button {
+    color: white;
+    background-color: rgb(238, 73, 42);
+    font-family: "Tinos";
+    font-size: 14pt;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.descr button:hover {
+    color: black;
+    transform: scale(1.03, 1.03);
+}
+
+@font-face {
+    font-family: 'IBMBold';
+    src: url('./../../media/fonts/IBMPlex/IBMPlexMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('./../../media/fonts/Gilroy/Gilroy-Bold.ttf');
+}
+
+
+
+@media (max-width: 1225px) {
+
+    .simpleSlider img {
+        height: 650px;
+    }
+
+    .descr h1 {
+        font-size: 20pt;
+    }
+
+    .descr h2 {
+        font-size: 15pt;
+    }
+
+    .simpleSlider .descr {
+
+        position: absolute;
+        z-index: 1;
+        left: 100px;
+        top: 50%;
+        width: 800px;
+        transform: translate(0, -50%);
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .descr button {
+        font-size: 10pt;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+}
+
+@media (max-width:950px) {
+    .simpleSlider .descr {
+
+        position: absolute;
+        z-index: 1;
+        left: 100px;
+        top: 50%;
+
+        width: 600px;
+        transform: translate(0, -50%);
+        /* transform: translate(-50%, -50%); */
+    }
+}
+
+@media (max-width: 650px) {
+    .sliderWrapper {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .simpleSlider {
+        width: 100%;
+    }
+
+    .simpleSlider img {
+        height: 550px;
+        width: 100%;
+    }
+
+    .simpleSlider .descr {
+
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+        top: 50%;
+        width: 300px;
+        transform: translate(0, -50%);
+    }
+
+
+    .descr h1 {
+        font-size: 12pt;
+
+    }
+
+    .descr h2 {
+        font-size: 10pt;
+    }
+
+    .descr button {
+        font-size: 8pt;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .simpleSlider {
+        width: 100%;
+
+    }
+
+    .simpleSlider img {
+        height: 550px;
+        width: 100%;
+    }
+
+    .descr h1 {
+        font-size: 10pt;
+
+    }
+
+    .descr h2 {
+        font-size: 8pt;
+    }
+
+
+    .simpleSlider .descr {
+
+        position: absolute;
+        z-index: 1;
+        left: 30px;
+        top: 50%;
+        width: 250px;
+        transform: translate(0, -50%);
+    }
+
+}

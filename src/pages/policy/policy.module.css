@@ -1,0 +1,34 @@
+.policy {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1420px) {
+    .policy {
+        width: 1200px;
+    }
+
+
+}
+
+@media (max-width: 1225px) {
+    .policy {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .policy {
+        width: 800px;
+    }
+}
+
+@media (max-width: 855px) {
+    .policy {
+        width: 97%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 530px) {}
