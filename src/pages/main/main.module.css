@@ -139,6 +139,13 @@
     width: 180px;
     height: 150px;
     object-fit: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.brands img:hover {
+    filter: brightness(0.4);
+    transform: scale(1.1, 1.1);
 }
 
 .callCenter {

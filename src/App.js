@@ -16,6 +16,7 @@ import ScanPageContainer from './pages/products/scanPage/ScanPageContainer';
 import TrenajerPageContainer from './pages/products/trenajerPage/TrenajerPageContainer';
 import Policy from './pages/policy/Policy';
 import MainContainer from './pages/main/MainContainer';
+import AnesthesiaPageContainer from './pages/products/anesthesia/AnesthesiaPageContainer';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/products/kt' element={<KtPageContainer />} />
           <Route path='/products/trenajers' element={<TrenajerPageContainer />} />
           <Route path='/products/scan' element={<ScanPageContainer />} />
+          <Route path='/products/anesthesia' element={<AnesthesiaPageContainer />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contacts' element={<ContactsPage />} />
           <Route path='/policy' element={<Policy />} />

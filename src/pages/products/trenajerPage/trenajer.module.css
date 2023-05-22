@@ -1,101 +1,252 @@
 .trenajerPage {
     width: 1400px;
     margin: 40px auto 0px auto;
+    overflow-x: hidden;
+    color: black;
 }
-.trenajerPage h1{
-    
-}
-.head h1 {
-    
-    margin: 0px 0px 50px 0px;
+
+.head {
     text-align: center;
 }
 
-.productsWrapper {
-    display: flex;
-    gap: 100px;
-    /* margin-top: 100px; */
-    margin-bottom: 100px;
+.head h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 28pt;
+    text-align: center;
 }
 
-.leftBar {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.head img {
+    margin: 0px auto 40px auto;
+    padding: 0;
 }
 
-.leftBar label {
-    
-    display: block;
+.purpose h2, .principles h2, .description h2, .usage h2, .effects h2, .care h2 {
+    font-size: 24pt;
+    color: black;
+    margin-bottom: 20px;
 }
 
-.leftBar select {
-
-    width: 100%;
-    height: 30px;
-}
-
-.leftBar select, input, .priceLine {
+.principles {
     margin-top: 20px;
 }
 
-.leftBar input[type="checkbox"] {
-    margin-left: 10px;
-    display: inline;
+.principles p, .description p, .usage p, .care p {
+    font-size: 14pt;
+    text-align: justify;
+    /* line-height: 25px; */
 }
 
-.accept {
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    cursor: pointer;
-    transition: 0.5s;
+.purpose li {
+    margin-top: 20px;
+    font-size: 14pt;
 }
 
-.accept:hover {
-    color: rgb(238, 73, 42);
+.effects li {
+    margin-top: 10px;
+    font-size: 14pt;
 }
 
-.accept:active {
-    transform: translate(5px, 5px);
-}
-
-.priceInputs {
+.care {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
+    height: 650px;
+    gap: 40px;
     justify-content: space-between;
 }
 
-.priceLine {
-    margin: 20px 0px 0px 0px;
+.careText h2 {
+    margin-top: 20px;
 }
 
-.priceInputs input {
-    display: inline;
-    margin: 20px 0px 0px 0px;
-    width: 40%;
-    height: 30px;
+.careText li {
+    margin-top: 10px;
+    font-size: 14pt;
 }
 
-.productItems {
-    width: 100%;
+.careText {
+    width: 45%;
+}
+
+.care img {
+    max-height: 100%;
+    width: 55%;
+    object-fit: cover;
+}
+
+.description {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    height: 600px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.descrText {
+    width: 45%;
+}
+
+.description img {
+    max-height: 100%;
+    width: 55%;
+    object-fit: cover;
+}
+
+.effects {
+    display: flex;
+    height: 400px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.effects img {
+    max-height: 100%;
+    width: 25%;
+    object-fit: cover;
+}
+
+.effectsText {
+    width: 60%;
+}
+
+.usage {
+    margin-top: 20px;
+}
+
+.usage h2 {
+    text-align: center;
+}
+
+.refBlock {
+    margin-top: 20px;
+}
+
+.refBlock button {
+    color: white;
+    background-color: rgb(238, 73, 42);
+    font-family: "Tinos";
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 7px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+    transition: 0.5s;
+}
+
+.refBlock button:hover {
+    transform: scale(1.02, 1.02);
 }
 
 @media (max-width: 1420px) {
     .trenajerPage {
         width: 1200px;
     }
+
+    .description {
+        display: flex;
+        height: 600px;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .descrText {
+        width: 55%;
+    }
+
+    .description img {
+        max-height: 100%;
+        width: 45%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 1225px) {
     .trenajerPage {
         width: 1000px;
+    }
+
+    .purpose {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .principles {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 0 auto;
+        height: auto;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .descrText {
+        width: 100%;
+    }
+
+    .description img {
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .effects {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .effects img {
+        max-height: 400px;
+        width: 97%;
+        object-fit: cover;
+        order: 1;
+    }
+
+    .effectsText {
+        width: 100%;
+
+    }
+
+    .care {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 97%;
+        margin: 0 auto;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .careText h2 {
+        margin-top: 20px;
+    }
+
+    .careText li {
+        margin-top: 10px;
+        font-size: 14pt;
+    }
+
+    .careText {
+        width: 100%;
+    }
+
+    .care img {
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .refBlock {
+        width: 97%;
+        margin: 20px auto 0 auto;
     }
 }
 
@@ -104,84 +255,13 @@
         width: 100%;
     }
 
-    .productsWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 100px;
-    }
 
-    .leftBar {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-
-    .leftBar select {
-
-        width: 200px;
-        height: auto;
-    }
-
-    .leftBar select, input, .priceLine {
-        margin-top: none;
-    }
-
-    .leftBar input[type="checkbox"] {
-        margin-left: 10px;
-        display: inline;
-    }
-
-    .productItems {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
 }
 
 
 @media (max-width: 800px) {}
 
 
-@media (max-width: 750px) {
-    .leftBar label {
-        font-size: 10pt;
-    }
+@media (max-width: 750px) {}
 
-    .leftBar select {
-        font-size: 10pt;
-    }
-
-    .leftBar select, input, .priceLine {
-        margin-top: 0px;
-    }
-
-    .leftBar input[type="checkbox"] {
-        margin-left: 10px;
-        display: inline;
-    }
-}
-
-@media (max-width: 430px) {
-    .leftBar label {
-        font-size: 8pt;
-    }
-
-    .leftBar select {
-        font-size: 8pt;
-        width: 90px;
-    }
-
-    .leftBar select, input, .priceLine {
-        margin-top: 0px;
-    }
-
-    .leftBar input[type="checkbox"] {
-        margin-left: 10px;
-        display: inline;
-    }
-}
+@media (max-width: 430px) {}

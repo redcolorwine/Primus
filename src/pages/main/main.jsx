@@ -93,7 +93,7 @@ const Main = (props) => {
             </div>
 
             <div className={cmodule.brandsWrapper}>
-                <h1>Производители-партнеры</h1>
+                <h1>В каталоге представлено оборудование следующих производителей</h1>
                 <div className={cmodule.brands}>
                     {props.brandsLogo.map(brand => {
                         return (<img src={brand} />)

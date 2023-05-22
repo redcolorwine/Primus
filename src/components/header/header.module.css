@@ -12,7 +12,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
-
     z-index: 2;
 
 }
@@ -151,9 +150,18 @@
     font-size: 18pt;
     font-weight: 900;
     color: rgb(0, 136, 122);
-    color: rgb(139, 143, 143);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: 0.5s;
+}
+
+.navMenu li a span {
+    color: black;
+    transition: 0.5s;
+}
+
+.navMenu li a span:hover {
+    color: rgb(255, 204, 187);
 }
 
 .headerMenu img {
@@ -165,6 +173,7 @@
 .headerMenu img:hover {
     transform: scale(1.05, 1.05);
 }
+
 
 
 

@@ -1,0 +1,50 @@
+.offerModule {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.offerModule h1 {}
+
+.offerWrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 1420px) {
+    .offerModule {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1225px) {
+    .offerModule {
+        width: 1000px;
+        margin: 0px auto 0px auto;
+    }
+}
+
+@media (max-width: 1020px) {
+    .offerModule {
+        width: 800px;
+        margin: 0px auto 0px auto;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .offerModule {
+        width: 100%;
+    }
+
+    .offerWrapper {
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media (max-width: 750px) {}

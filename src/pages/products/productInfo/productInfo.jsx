@@ -2,15 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import cmodule from './productInfo.module.css';
 import ContactForm from '../../../components/contactForm/ContactForm';
+import zoomImg from './../../../media/icons/zoom.png';
+import leftArrow from './../../../media/icons/arrowLeft.png';
+import rightArrow from './../../../media/icons/arrowRight.png';
 import DOMPurify from 'dompurify';
 
 const ProductInfo = (props) => {
 
     const { id } = useParams();
     const [curImg, setCurImg] = useState(0);
+    const [openImg, setOpenImg] = useState(true);
+
     const navigate = useNavigate();
 
     useEffect(() => {
+        setOpenImg(false);
         props.getProduct(id - 1);
 
     }, [id])
@@ -26,6 +32,10 @@ const ProductInfo = (props) => {
 
         return (
             <div className={cmodule.productInfo}>
+                {openImg && <div className={cmodule.openImg}>
+                    <button onClick={() => setOpenImg(!openImg)}>X</button>
+                    <img src={props.products[props.currentProduct].img[curImg]} alt="" />
+                </div>}
                 <h1>
                     Аппарат {props.products[props.currentProduct].brand} {props.products[props.currentProduct].name}
                 </h1>
@@ -54,17 +64,27 @@ const ProductInfo = (props) => {
                                 <button onClick={() => navigate('/contacts')}>Связаться с нами</button>
                             </div>
                         </div>
-
-                        <div className={cmodule.imgWrapper}>
-                            <div className={cmodule.mainImg}>
-                                <img src={props.products[props.currentProduct].img[curImg]} alt="" />
+                        <div className={cmodule.preImgWrapper}>
+                            <div className={cmodule.zoom}>
+                                <img src={zoomImg} alt="" onClick={() => setOpenImg(!openImg)} />
                             </div>
-                            <div className={cmodule.otherImgs}>
-                                {props.products[props.currentProduct].img.map((img, index) => {
-                                    return (<><img src={img} alt={`img: ${index}`} className={`${index == curImg ? `${cmodule.active}` : ''}`} onClick={() => { setCurImg(index) }} /></>)
-                                })}
+                            <div className={cmodule.imgWrapper}>
+                                <img src={leftArrow} onClick={() => { if (curImg - 1 < 0) { setCurImg(props.products[props.currentProduct].img.length - 1) } else { setCurImg(curImg - 1) } }} alt="" className={cmodule.arrows} />
+                                <div className={cmodule.imgs}>
+                                    <div className={cmodule.mainImg} >
+
+                                        <img src={props.products[props.currentProduct].img[curImg]} alt="" />
+                                    </div>
+                                    <div className={cmodule.otherImgs}>
+                                        {props.products[props.currentProduct].img.map((img, index) => {
+                                            return (<><img src={img} alt={`img: ${index}`} className={`${index == curImg ? `${cmodule.active}` : ''}`} onClick={() => { setCurImg(index) }} /></>)
+                                        })}
+                                    </div>
+                                </div>
+                                <img src={rightArrow} alt="" onClick={() => { if (curImg + 1 > props.products[props.currentProduct].img.length - 1) { setCurImg(0) } else { setCurImg(curImg + 1) } }} className={cmodule.arrows} />
                             </div>
                         </div>
+
                     </div>
                     <div className={cmodule.description}>
                         <h2>Подробное описание</h2>
